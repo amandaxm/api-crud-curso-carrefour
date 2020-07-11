@@ -1,0 +1,25 @@
+//typescript forma tipada do js, mais facil de mexer
+//compila para javascript puro
+
+{
+    "compilerOptions":{
+    "target": "es5",
+    "module": "commonjs",
+    "outDir": "build",
+    "typeRoots": [
+    "../node_modules/@types"
+    ],
+    "types": [
+    "node"
+    ]
+    },
+    "include": [
+    "server/**/*.ts",
+    "server/*.ts"
+    ],
+    "exclude": [
+    "node_modules"
+    ],
+    "compileOnSave": true,
+    "buildOnSave": true
+}
